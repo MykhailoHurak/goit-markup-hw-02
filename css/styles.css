@@ -86,12 +86,21 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--color-head);
+
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .hero-btn:hover {
   cursor: pointer;
-  color: var(--color-head);
-  background: var(--color-accent);
+  color: var(--color-headline);
+  background: var(--color-alternate);
 }
 
 /* СЕКЦИЯ 2 ПРЕИМУЩЕСТВА (скрыть заголовок) */
