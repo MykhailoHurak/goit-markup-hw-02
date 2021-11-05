@@ -1,0 +1,215 @@
+/*
+font-family: Raleway; - шрифт лого
+font-family: Roboto; - шрифт основной
+*/
+:root {
+  --color-text: #757575; /* цвет шрифта mail, tel, текста */
+  --color-headline: #212121; /* цвет шрифта меню, заголовков (кроме н1) */
+  --color-accent: #2196f3; /* цвет шрифта лого, кнопки, ховер, фокус */
+  --color-head: #ffffff; /* фон шапки, цвет шрифта H1, кнопки, текста футера */
+  --color-main: #e5e5e5; /* фон основной */
+  --color-alternate: #f5f4fa; /* фон чередующийся */
+  --color-hero-footer: #2f303a; /* фон героя, футера */
+}
+
+/* в тэге body указываем основной цвет фона, текста, шрифта */
+/* кнопки не унаследуют, ссылка - да */
+body {
+  background-color: var(--color-main);
+  color: var(--color-text);
+  font-family: Roboto, sans-serif;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* ШАПКА --------------------------- */
+
+.header-logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--color-accent);
+}
+
+.header-logo-two {
+  color: var(--color-headline);
+}
+
+.header {
+  background-color: var(--color-head);
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--color-headline);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--color-accent);
+}
+
+/* Секция 1 Главный экран --------------------*/
+
+.hero {
+  background: var(--color-hero-footer);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-head);
+}
+
+.hero-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--color-head);
+}
+
+.hero-btn:hover {
+  cursor: pointer;
+  color: var(--color-head);
+  background: var(--color-accent);
+}
+
+/* СЕКЦИЯ 2 ПРЕИМУЩЕСТВА (скрыть заголовок) */
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-headline);
+}
+
+.section-advantage-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-headline);
+}
+
+.section-advantage-text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--color-text);
+}
+
+/* СЕКЦИЯ 4 НАША КОМАНДА ----------- */
+
+.section-our-team {
+  background: var(--color-alternate);
+}
+
+.section-team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-headline);
+}
+
+.section-team-text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-text);
+}
+
+/* FOOTER -------------------------- */
+
+.footer {
+  background: var(--color-hero-footer);
+}
+
+.footer-logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--color-accent);
+}
+
+.footer-logo-two {
+  color: var(--color-head);
+}
+
+.footer-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-address {
+  font-weight: normal;
+  color: var(--color-head);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--color-accent);
+}
+
+/* ПОРТФОЛИО ------------------------- */
+
+.portfolio-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-headline);
+}
+
+.portfolio-btn:hover {
+  cursor: pointer;
+  color: var(--color-head);
+  background: var(--color-accent);
+}
+
+.section-portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--color-headline);
+}
+
+.section-portfolio-text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--color-text);
+}
