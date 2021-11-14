@@ -5,15 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
-
-    <!-- ниже подключили стили из папки CSS -->
-    <link rel="stylesheet" href="./css/styles.css">
-
-    <!-- ниже подключили шрифты Roboto и Raleway -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
@@ -21,31 +17,34 @@
     <header class="header">
         <nav class="header-navigation">
             <a class="header-logo link" href="index.html">Web<span class="header-logo-two">Studio</span></a>
-            <ul class="list header-list">
-                <li class="header-item"><a class="link header-link" href="./portfolio.html">Портфолио</a></li>
-                <li class="header-item"><a class="link header-link" href="./index.html">Студия</a></li>
-                <li class="header-item"><a class="link header-link" href="">Контакты</a></li>
+            <ul class="list nav-list">
+                <li class="nav-item"><a class="link nav-link current" href="index.html">Студия</a></li>
+                <li class="nav-item"><a class="link nav-link" href="portfolio.html">Портфолио</a></li>
+                <li class="nav-item"><a class="link nav-link" href="">Контакты</a></li>
             </ul>
         </nav>
         
-        <ul class="list">
-            <li><a class="link header-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="link header-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="list contacts-list">
+            <li><a class="link contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="link contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </header>
 
 <main>
 <!-- Секция 1 Главный экран -->
 <section class="hero">
+    <div class="container">
     <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
     <button class="hero-btn" type="button">Заказать услугу</button>
+</div>
+    
 </section>
 
 <!-- Секция 2 Преимущества (скрыть заголовок) -->
 <section class="section">
     <h2 hidden class="section-title">Преимущества</h2>
     <ul class="li">
-        <li>
+        <l1i>
             <h3 class="section-advantage-title">Внимание к деталям</h3>
             <p class="section-advantage-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
         </li>

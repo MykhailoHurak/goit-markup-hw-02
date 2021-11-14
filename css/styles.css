@@ -1,31 +1,34 @@
-/*
-font-family: Raleway; - шрифт лого
-font-family: Roboto; - шрифт основной
-*/
 :root {
-  --color-text: #757575; /* цвет шрифта mail, tel, текста */
-  --color-headline: #212121; /* цвет шрифта меню, заголовков (кроме н1) */
-  --color-accent: #2196f3; /* цвет шрифта лого, кнопки, ховер, фокус */
-  --color-head: #ffffff; /* фон шапки, цвет шрифта H1, кнопки, текста футера */
-  --color-main: #e5e5e5; /* фон основной */
-  --color-alternate: #f5f4fa; /* фон чередующийся */
-  --color-hero-footer: #2f303a; /* фон героя, футера */
+  --color-text: #757575;
+  --color-headline: #212121;
+  --color-accent: #2196f3;
+  --color-head: #ffffff;
+  --color-main: #ffffff;
+  --color-alternate: #f5f4fa;
+  --color-hero-footer: #2f303a;
 }
 
-/* в тэге body указываем основной цвет фона, текста, шрифта */
-/* кнопки не унаследуют, ссылка - да */
 body {
   background-color: var(--color-main);
   color: var(--color-text);
   font-family: Roboto, sans-serif;
 }
 
-.list {
-  list-style: none;
+a {
+  text-decoration: none;
 }
 
-.link {
-  text-decoration: none;
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
 }
 
 /* ШАПКА --------------------------- */
@@ -43,11 +46,16 @@ body {
   color: var(--color-headline);
 }
 
-.header {
-  background-color: var(--color-head);
+.nav-link.current,
+.contacts-link.current {
+  color: var(--color-accent);
 }
 
-.header-link {
+.header {
+  background-color: var(--color-main);
+}
+
+.nav-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -55,12 +63,33 @@ body {
   color: var(--color-headline);
 }
 
-.header-link:hover,
-.header-link:focus {
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--color-accent);
+}
+
+.contacts-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--color-accent);
 }
 
 /* Секция 1 Главный экран --------------------*/
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .hero {
   background: var(--color-hero-footer);
@@ -73,7 +102,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--color-head);
+  color: var(--color-main);
 }
 
 .hero-btn {
@@ -85,13 +114,7 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--color-head);
-
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
-
+  color: var(--color-main);
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -104,6 +127,11 @@ body {
 }
 
 /* СЕКЦИЯ 2 ПРЕИМУЩЕСТВА (скрыть заголовок) */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .section-title {
   font-weight: 700;
@@ -169,7 +197,7 @@ body {
 }
 
 .footer-logo-two {
-  color: var(--color-head);
+  color: var(--color-main);
 }
 
 .footer-link {
@@ -182,7 +210,7 @@ body {
 
 .footer-address {
   font-weight: normal;
-  color: var(--color-head);
+  color: var(--color-main);
 }
 
 .footer-link:hover,
@@ -204,7 +232,7 @@ body {
 
 .portfolio-btn:hover {
   cursor: pointer;
-  color: var(--color-head);
+  color: var(--color-main);
   background: var(--color-accent);
 }
 
